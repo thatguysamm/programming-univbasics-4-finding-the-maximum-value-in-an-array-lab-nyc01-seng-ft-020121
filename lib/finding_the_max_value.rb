@@ -1,9 +1,9 @@
 def find_max_value(array)
-  array.sort
   counter= 0
+  max_value= -1
   while counter< array.length do
-    if array[counter]== array.length
-      array.length = array
+    if max_value< array[counter]
+      max_value= array[counter]
     end
     counter += 1
   end
